@@ -96,7 +96,7 @@
 		22989F2F1D5160AB006F916C /* text.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = text.png; sourceTree = "<group>"; };
 		22989F301D5160AB006F916C /* twitter.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = twitter.png; sourceTree = "<group>"; };
 		22989F311D5160AB006F916C /* Win.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Win.swift; sourceTree = "<group>"; };
-		22989F5E1D5161A2006F916C /* Podfile */ = {isa = PBXFileReference; lastKnownFileType = text; path = Podfile; sourceTree = "<group>"; };
+		22989F5E1D5161A2006F916C /* Podfile */ = {isa = PBXFileReference; lastKnownFileType = text; path = Podfile; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		89416FE96071944B18144E53 /* Pods_CrownHog.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CrownHog.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		9D817D5C1233F5440EB83F93 /* Pods-CrownHog.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CrownHog.debug.xcconfig"; path = "Pods/Target Support Files/Pods-CrownHog/Pods-CrownHog.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
