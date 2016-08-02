@@ -1,22 +1,48 @@
 //
 //  AppDelegate.swift
-//  CrownHog
+//  Spotlight
 //
-//  Created by Samuel Huang on 8/2/16.
+//  Created by Samuel Huang on 1/20/16.
 //  Copyright © 2016 Zomero LLC. All rights reserved.
 //
 
 import UIKit
+import ParseUI
+import Bolts
+import FBSDKCoreKit
+import ParseFacebookUtilsV4
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
 
-
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
         // Override point for customization after application launch.
+        
+        Parse.setApplicationId("NsBqawBjGjvZaty3OgndapsHfq0ajmkc09SnE1dG", clientKey: "RCX5qA7d8ahC3TbdXM9IpoB3ATULIvvBakG0bG1T")
+        
+        PFAnalytics.trackAppOpenedWithLaunchOptions(launchOptions)
+        
+        PFFacebookUtils.initializeFacebookWithApplicationLaunchOptions(launchOptions)
+        
+        FBSDKApplicationDelegate.sharedInstance().application(application, didFinishLaunchingWithOptions: launchOptions)
+        
+        self.window?.tintColor = Helper.UIColorFromRGB(0x02C6C6)
+        
+        UIApplication.sharedApplication().setStatusBarStyle(.LightContent, animated: true)
+        
         return true
+    }
+    
+    func application(application: UIApplication, openURL url: NSURL, sourceApplication: String?, annotation: AnyObject) -> Bool {
+        return FBSDKApplicationDelegate.sharedInstance().application(application, openURL: url, sourceApplication: sourceApplication, annotation: annotation)
+    }
+    
+    func applicationDidBecomeActive(application: UIApplication) {
+        // Restart any tasks that were paused (or not yet started) while the application was inactive. If the application was previously in the background, optionally refresh the user interface.
+        
+        FBSDKAppEvents.activateApp()
     }
 
     func applicationWillResignActive(application: UIApplication) {
@@ -33,14 +59,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         // Called as part of the transition from the background to the inactive state; here you can undo many of the changes made on entering the background.
     }
 
-    func applicationDidBecomeActive(application: UIApplication) {
-        // Restart any tasks that were paused (or not yet started) while the application was inactive. If the application was previously in the background, optionally refresh the user interface.
-    }
-
     func applicationWillTerminate(application: UIApplication) {
         // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
     }
-
 
 }
 

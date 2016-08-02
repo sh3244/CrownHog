@@ -3,25 +3,102 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 46;
+	objectVersion = 47;
 	objects = {
 
 /* Begin PBXBuildFile section */
-		22989EF71D516039006F916C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22989EF61D516039006F916C /* AppDelegate.swift */; };
-		22989EF91D516039006F916C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22989EF81D516039006F916C /* ViewController.swift */; };
-		22989EFC1D516039006F916C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 22989EFA1D516039006F916C /* Main.storyboard */; };
-		22989EFE1D516039006F916C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 22989EFD1D516039006F916C /* Assets.xcassets */; };
-		22989F011D516039006F916C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 22989EFF1D516039006F916C /* LaunchScreen.storyboard */; };
+		096F953D6700FDD9655166A8 /* Pods_CrownHog.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 89416FE96071944B18144E53 /* Pods_CrownHog.framework */; };
+		22989F321D5160AB006F916C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22989F091D5160AB006F916C /* AppDelegate.swift */; };
+		22989F331D5160AB006F916C /* btnborder.png in Resources */ = {isa = PBXBuildFile; fileRef = 22989F0A1D5160AB006F916C /* btnborder.png */; };
+		22989F341D5160AB006F916C /* CodeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22989F0B1D5160AB006F916C /* CodeView.swift */; };
+		22989F351D5160AB006F916C /* CustomCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22989F0C1D5160AB006F916C /* CustomCell.swift */; };
+		22989F361D5160AB006F916C /* DimmedCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22989F0D1D5160AB006F916C /* DimmedCell.swift */; };
+		22989F371D5160AB006F916C /* ex.png in Resources */ = {isa = PBXBuildFile; fileRef = 22989F0E1D5160AB006F916C /* ex.png */; };
+		22989F381D5160AB006F916C /* eye.png in Resources */ = {isa = PBXBuildFile; fileRef = 22989F0F1D5160AB006F916C /* eye.png */; };
+		22989F391D5160AB006F916C /* face.png in Resources */ = {isa = PBXBuildFile; fileRef = 22989F101D5160AB006F916C /* face.png */; };
+		22989F3A1D5160AB006F916C /* fb.png in Resources */ = {isa = PBXBuildFile; fileRef = 22989F111D5160AB006F916C /* fb.png */; };
+		22989F3B1D5160AB006F916C /* Gotham-Bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 22989F121D5160AB006F916C /* Gotham-Bold.otf */; };
+		22989F3C1D5160AB006F916C /* Gotham-Book.otf in Resources */ = {isa = PBXBuildFile; fileRef = 22989F131D5160AB006F916C /* Gotham-Book.otf */; };
+		22989F3D1D5160AB006F916C /* Gotham-Medium.otf in Resources */ = {isa = PBXBuildFile; fileRef = 22989F141D5160AB006F916C /* Gotham-Medium.otf */; };
+		22989F3E1D5160AB006F916C /* heart.png in Resources */ = {isa = PBXBuildFile; fileRef = 22989F151D5160AB006F916C /* heart.png */; };
+		22989F3F1D5160AB006F916C /* Helper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22989F161D5160AB006F916C /* Helper.swift */; };
+		22989F401D5160AB006F916C /* hog.png in Resources */ = {isa = PBXBuildFile; fileRef = 22989F171D5160AB006F916C /* hog.png */; };
+		22989F411D5160AB006F916C /* hogDimmed.png in Resources */ = {isa = PBXBuildFile; fileRef = 22989F181D5160AB006F916C /* hogDimmed.png */; };
+		22989F421D5160AB006F916C /* HogLogin.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22989F191D5160AB006F916C /* HogLogin.swift */; };
+		22989F431D5160AB006F916C /* HogPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22989F1A1D5160AB006F916C /* HogPage.swift */; };
+		22989F441D5160AB006F916C /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 22989F1B1D5160AB006F916C /* Images.xcassets */; };
+		22989F451D5160AB006F916C /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 22989F1C1D5160AB006F916C /* Info.plist */; };
+		22989F461D5160AB006F916C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 22989F1D1D5160AB006F916C /* LaunchScreen.storyboard */; };
+		22989F471D5160AB006F916C /* like.png in Resources */ = {isa = PBXBuildFile; fileRef = 22989F1E1D5160AB006F916C /* like.png */; };
+		22989F481D5160AB006F916C /* likeFaded.png in Resources */ = {isa = PBXBuildFile; fileRef = 22989F1F1D5160AB006F916C /* likeFaded.png */; };
+		22989F491D5160AB006F916C /* link.png in Resources */ = {isa = PBXBuildFile; fileRef = 22989F201D5160AB006F916C /* link.png */; };
+		22989F4A1D5160AB006F916C /* logo.png in Resources */ = {isa = PBXBuildFile; fileRef = 22989F211D5160AB006F916C /* logo.png */; };
+		22989F4B1D5160AB006F916C /* logoMedium.png in Resources */ = {isa = PBXBuildFile; fileRef = 22989F221D5160AB006F916C /* logoMedium.png */; };
+		22989F4C1D5160AB006F916C /* logoSmall.png in Resources */ = {isa = PBXBuildFile; fileRef = 22989F231D5160AB006F916C /* logoSmall.png */; };
+		22989F4D1D5160AB006F916C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 22989F241D5160AB006F916C /* Main.storyboard */; };
+		22989F4E1D5160AB006F916C /* Pages.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22989F251D5160AB006F916C /* Pages.swift */; };
+		22989F4F1D5160AB006F916C /* Personal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22989F261D5160AB006F916C /* Personal.swift */; };
+		22989F501D5160AB006F916C /* photo.png in Resources */ = {isa = PBXBuildFile; fileRef = 22989F271D5160AB006F916C /* photo.png */; };
+		22989F511D5160AB006F916C /* settings.png in Resources */ = {isa = PBXBuildFile; fileRef = 22989F281D5160AB006F916C /* settings.png */; };
+		22989F521D5160AB006F916C /* Settings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22989F291D5160AB006F916C /* Settings.swift */; };
+		22989F531D5160AB006F916C /* share.png in Resources */ = {isa = PBXBuildFile; fileRef = 22989F2A1D5160AB006F916C /* share.png */; };
+		22989F541D5160AB006F916C /* shareArrow.png in Resources */ = {isa = PBXBuildFile; fileRef = 22989F2B1D5160AB006F916C /* shareArrow.png */; };
+		22989F551D5160AB006F916C /* SocialView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22989F2C1D5160AB006F916C /* SocialView.swift */; };
+		22989F561D5160AB006F916C /* Spotlight.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22989F2D1D5160AB006F916C /* Spotlight.swift */; };
+		22989F571D5160AB006F916C /* Tabs.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22989F2E1D5160AB006F916C /* Tabs.swift */; };
+		22989F581D5160AB006F916C /* text.png in Resources */ = {isa = PBXBuildFile; fileRef = 22989F2F1D5160AB006F916C /* text.png */; };
+		22989F591D5160AB006F916C /* twitter.png in Resources */ = {isa = PBXBuildFile; fileRef = 22989F301D5160AB006F916C /* twitter.png */; };
+		22989F5A1D5160AB006F916C /* Win.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22989F311D5160AB006F916C /* Win.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		04EA42E09F48D031FDD700FB /* Pods-CrownHog.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CrownHog.release.xcconfig"; path = "Pods/Target Support Files/Pods-CrownHog/Pods-CrownHog.release.xcconfig"; sourceTree = "<group>"; };
 		22989EF31D516039006F916C /* CrownHog.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CrownHog.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		22989EF61D516039006F916C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		22989EF81D516039006F916C /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		22989EFB1D516039006F916C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		22989EFD1D516039006F916C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		22989F001D516039006F916C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		22989F021D516039006F916C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		22989F081D5160AA006F916C /* CrownHog-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "CrownHog-Bridging-Header.h"; sourceTree = "<group>"; };
+		22989F091D5160AB006F916C /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		22989F0A1D5160AB006F916C /* btnborder.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = btnborder.png; sourceTree = "<group>"; };
+		22989F0B1D5160AB006F916C /* CodeView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CodeView.swift; sourceTree = "<group>"; };
+		22989F0C1D5160AB006F916C /* CustomCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomCell.swift; sourceTree = "<group>"; };
+		22989F0D1D5160AB006F916C /* DimmedCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DimmedCell.swift; sourceTree = "<group>"; };
+		22989F0E1D5160AB006F916C /* ex.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ex.png; sourceTree = "<group>"; };
+		22989F0F1D5160AB006F916C /* eye.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = eye.png; sourceTree = "<group>"; };
+		22989F101D5160AB006F916C /* face.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = face.png; sourceTree = "<group>"; };
+		22989F111D5160AB006F916C /* fb.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = fb.png; sourceTree = "<group>"; };
+		22989F121D5160AB006F916C /* Gotham-Bold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Gotham-Bold.otf"; path = "CrownHog/Gotham-Bold.otf"; sourceTree = "<group>"; };
+		22989F131D5160AB006F916C /* Gotham-Book.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Gotham-Book.otf"; path = "CrownHog/Gotham-Book.otf"; sourceTree = "<group>"; };
+		22989F141D5160AB006F916C /* Gotham-Medium.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Gotham-Medium.otf"; path = "CrownHog/Gotham-Medium.otf"; sourceTree = "<group>"; };
+		22989F151D5160AB006F916C /* heart.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = heart.png; sourceTree = "<group>"; };
+		22989F161D5160AB006F916C /* Helper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Helper.swift; sourceTree = "<group>"; };
+		22989F171D5160AB006F916C /* hog.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = hog.png; sourceTree = "<group>"; };
+		22989F181D5160AB006F916C /* hogDimmed.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = hogDimmed.png; sourceTree = "<group>"; };
+		22989F191D5160AB006F916C /* HogLogin.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HogLogin.swift; sourceTree = "<group>"; };
+		22989F1A1D5160AB006F916C /* HogPage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HogPage.swift; sourceTree = "<group>"; };
+		22989F1B1D5160AB006F916C /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		22989F1C1D5160AB006F916C /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		22989F1D1D5160AB006F916C /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
+		22989F1E1D5160AB006F916C /* like.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = like.png; sourceTree = "<group>"; };
+		22989F1F1D5160AB006F916C /* likeFaded.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = likeFaded.png; sourceTree = "<group>"; };
+		22989F201D5160AB006F916C /* link.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = link.png; sourceTree = "<group>"; };
+		22989F211D5160AB006F916C /* logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = logo.png; sourceTree = "<group>"; };
+		22989F221D5160AB006F916C /* logoMedium.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = logoMedium.png; sourceTree = "<group>"; };
+		22989F231D5160AB006F916C /* logoSmall.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = logoSmall.png; sourceTree = "<group>"; };
+		22989F241D5160AB006F916C /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		22989F251D5160AB006F916C /* Pages.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Pages.swift; sourceTree = "<group>"; };
+		22989F261D5160AB006F916C /* Personal.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Personal.swift; sourceTree = "<group>"; };
+		22989F271D5160AB006F916C /* photo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = photo.png; sourceTree = "<group>"; };
+		22989F281D5160AB006F916C /* settings.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = settings.png; sourceTree = "<group>"; };
+		22989F291D5160AB006F916C /* Settings.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Settings.swift; sourceTree = "<group>"; };
+		22989F2A1D5160AB006F916C /* share.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = share.png; sourceTree = "<group>"; };
+		22989F2B1D5160AB006F916C /* shareArrow.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = shareArrow.png; sourceTree = "<group>"; };
+		22989F2C1D5160AB006F916C /* SocialView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SocialView.swift; sourceTree = "<group>"; };
+		22989F2D1D5160AB006F916C /* Spotlight.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Spotlight.swift; sourceTree = "<group>"; };
+		22989F2E1D5160AB006F916C /* Tabs.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Tabs.swift; sourceTree = "<group>"; };
+		22989F2F1D5160AB006F916C /* text.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = text.png; sourceTree = "<group>"; };
+		22989F301D5160AB006F916C /* twitter.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = twitter.png; sourceTree = "<group>"; };
+		22989F311D5160AB006F916C /* Win.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Win.swift; sourceTree = "<group>"; };
+		22989F5E1D5161A2006F916C /* Podfile */ = {isa = PBXFileReference; lastKnownFileType = text; path = Podfile; sourceTree = "<group>"; };
+		89416FE96071944B18144E53 /* Pods_CrownHog.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CrownHog.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		9D817D5C1233F5440EB83F93 /* Pods-CrownHog.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CrownHog.debug.xcconfig"; path = "Pods/Target Support Files/Pods-CrownHog/Pods-CrownHog.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,17 +106,32 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				096F953D6700FDD9655166A8 /* Pods_CrownHog.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		20F27E3EFF6BB8B12A4D5E70 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				89416FE96071944B18144E53 /* Pods_CrownHog.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		22989EEA1D516039006F916C = {
 			isa = PBXGroup;
 			children = (
+				22989F5E1D5161A2006F916C /* Podfile */,
+				22989F121D5160AB006F916C /* Gotham-Bold.otf */,
+				22989F131D5160AB006F916C /* Gotham-Book.otf */,
+				22989F141D5160AB006F916C /* Gotham-Medium.otf */,
 				22989EF51D516039006F916C /* CrownHog */,
 				22989EF41D516039006F916C /* Products */,
+				809BCC190FBEDBC98F1D9B60 /* Pods */,
+				20F27E3EFF6BB8B12A4D5E70 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -54,14 +146,80 @@
 		22989EF51D516039006F916C /* CrownHog */ = {
 			isa = PBXGroup;
 			children = (
-				22989EF61D516039006F916C /* AppDelegate.swift */,
-				22989EF81D516039006F916C /* ViewController.swift */,
-				22989EFA1D516039006F916C /* Main.storyboard */,
-				22989EFD1D516039006F916C /* Assets.xcassets */,
-				22989EFF1D516039006F916C /* LaunchScreen.storyboard */,
-				22989F021D516039006F916C /* Info.plist */,
+				22989F091D5160AB006F916C /* AppDelegate.swift */,
+				22989F161D5160AB006F916C /* Helper.swift */,
+				22989F5B1D516126006F916C /* PNG */,
+				22989F5D1D516155006F916C /* View */,
+				22989F5C1D516148006F916C /* Controller */,
+				22989F1B1D5160AB006F916C /* Images.xcassets */,
+				22989F1C1D5160AB006F916C /* Info.plist */,
+				22989F1D1D5160AB006F916C /* LaunchScreen.storyboard */,
+				22989F241D5160AB006F916C /* Main.storyboard */,
+				22989F081D5160AA006F916C /* CrownHog-Bridging-Header.h */,
 			);
 			path = CrownHog;
+			sourceTree = "<group>";
+		};
+		22989F5B1D516126006F916C /* PNG */ = {
+			isa = PBXGroup;
+			children = (
+				22989F0A1D5160AB006F916C /* btnborder.png */,
+				22989F0E1D5160AB006F916C /* ex.png */,
+				22989F0F1D5160AB006F916C /* eye.png */,
+				22989F101D5160AB006F916C /* face.png */,
+				22989F111D5160AB006F916C /* fb.png */,
+				22989F151D5160AB006F916C /* heart.png */,
+				22989F171D5160AB006F916C /* hog.png */,
+				22989F181D5160AB006F916C /* hogDimmed.png */,
+				22989F1E1D5160AB006F916C /* like.png */,
+				22989F1F1D5160AB006F916C /* likeFaded.png */,
+				22989F201D5160AB006F916C /* link.png */,
+				22989F211D5160AB006F916C /* logo.png */,
+				22989F221D5160AB006F916C /* logoMedium.png */,
+				22989F231D5160AB006F916C /* logoSmall.png */,
+				22989F271D5160AB006F916C /* photo.png */,
+				22989F281D5160AB006F916C /* settings.png */,
+				22989F2A1D5160AB006F916C /* share.png */,
+				22989F2B1D5160AB006F916C /* shareArrow.png */,
+				22989F2F1D5160AB006F916C /* text.png */,
+				22989F301D5160AB006F916C /* twitter.png */,
+			);
+			name = PNG;
+			sourceTree = "<group>";
+		};
+		22989F5C1D516148006F916C /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				22989F0B1D5160AB006F916C /* CodeView.swift */,
+				22989F191D5160AB006F916C /* HogLogin.swift */,
+				22989F261D5160AB006F916C /* Personal.swift */,
+				22989F291D5160AB006F916C /* Settings.swift */,
+				22989F2C1D5160AB006F916C /* SocialView.swift */,
+				22989F2D1D5160AB006F916C /* Spotlight.swift */,
+				22989F2E1D5160AB006F916C /* Tabs.swift */,
+				22989F311D5160AB006F916C /* Win.swift */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
+		22989F5D1D516155006F916C /* View */ = {
+			isa = PBXGroup;
+			children = (
+				22989F0C1D5160AB006F916C /* CustomCell.swift */,
+				22989F0D1D5160AB006F916C /* DimmedCell.swift */,
+				22989F1A1D5160AB006F916C /* HogPage.swift */,
+				22989F251D5160AB006F916C /* Pages.swift */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		809BCC190FBEDBC98F1D9B60 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				9D817D5C1233F5440EB83F93 /* Pods-CrownHog.debug.xcconfig */,
+				04EA42E09F48D031FDD700FB /* Pods-CrownHog.release.xcconfig */,
+			);
+			name = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -71,9 +229,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 22989F051D516039006F916C /* Build configuration list for PBXNativeTarget "CrownHog" */;
 			buildPhases = (
+				4FF5FEF6B540EBA45B5BEE57 /* [CP] Check Pods Manifest.lock */,
 				22989EEF1D516039006F916C /* Sources */,
 				22989EF01D516039006F916C /* Frameworks */,
 				22989EF11D516039006F916C /* Resources */,
+				8A831804EB7AEFE2B7D2FAED /* [CP] Embed Pods Frameworks */,
+				D060E88F28EAB05476F47C92 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -100,7 +261,7 @@
 				};
 			};
 			buildConfigurationList = 22989EEE1D516039006F916C /* Build configuration list for PBXProject "CrownHog" */;
-			compatibilityVersion = "Xcode 3.2";
+			compatibilityVersion = "Xcode 6.3";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
@@ -122,44 +283,109 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				22989F011D516039006F916C /* LaunchScreen.storyboard in Resources */,
-				22989EFE1D516039006F916C /* Assets.xcassets in Resources */,
-				22989EFC1D516039006F916C /* Main.storyboard in Resources */,
+				22989F4D1D5160AB006F916C /* Main.storyboard in Resources */,
+				22989F401D5160AB006F916C /* hog.png in Resources */,
+				22989F3B1D5160AB006F916C /* Gotham-Bold.otf in Resources */,
+				22989F4A1D5160AB006F916C /* logo.png in Resources */,
+				22989F3E1D5160AB006F916C /* heart.png in Resources */,
+				22989F3A1D5160AB006F916C /* fb.png in Resources */,
+				22989F381D5160AB006F916C /* eye.png in Resources */,
+				22989F531D5160AB006F916C /* share.png in Resources */,
+				22989F581D5160AB006F916C /* text.png in Resources */,
+				22989F371D5160AB006F916C /* ex.png in Resources */,
+				22989F391D5160AB006F916C /* face.png in Resources */,
+				22989F4B1D5160AB006F916C /* logoMedium.png in Resources */,
+				22989F501D5160AB006F916C /* photo.png in Resources */,
+				22989F411D5160AB006F916C /* hogDimmed.png in Resources */,
+				22989F3C1D5160AB006F916C /* Gotham-Book.otf in Resources */,
+				22989F481D5160AB006F916C /* likeFaded.png in Resources */,
+				22989F491D5160AB006F916C /* link.png in Resources */,
+				22989F441D5160AB006F916C /* Images.xcassets in Resources */,
+				22989F4C1D5160AB006F916C /* logoSmall.png in Resources */,
+				22989F3D1D5160AB006F916C /* Gotham-Medium.otf in Resources */,
+				22989F471D5160AB006F916C /* like.png in Resources */,
+				22989F461D5160AB006F916C /* LaunchScreen.storyboard in Resources */,
+				22989F541D5160AB006F916C /* shareArrow.png in Resources */,
+				22989F511D5160AB006F916C /* settings.png in Resources */,
+				22989F591D5160AB006F916C /* twitter.png in Resources */,
+				22989F331D5160AB006F916C /* btnborder.png in Resources */,
+				22989F451D5160AB006F916C /* Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		4FF5FEF6B540EBA45B5BEE57 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		8A831804EB7AEFE2B7D2FAED /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-CrownHog/Pods-CrownHog-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D060E88F28EAB05476F47C92 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-CrownHog/Pods-CrownHog-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		22989EEF1D516039006F916C /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				22989EF91D516039006F916C /* ViewController.swift in Sources */,
-				22989EF71D516039006F916C /* AppDelegate.swift in Sources */,
+				22989F571D5160AB006F916C /* Tabs.swift in Sources */,
+				22989F561D5160AB006F916C /* Spotlight.swift in Sources */,
+				22989F321D5160AB006F916C /* AppDelegate.swift in Sources */,
+				22989F351D5160AB006F916C /* CustomCell.swift in Sources */,
+				22989F421D5160AB006F916C /* HogLogin.swift in Sources */,
+				22989F551D5160AB006F916C /* SocialView.swift in Sources */,
+				22989F4F1D5160AB006F916C /* Personal.swift in Sources */,
+				22989F521D5160AB006F916C /* Settings.swift in Sources */,
+				22989F431D5160AB006F916C /* HogPage.swift in Sources */,
+				22989F3F1D5160AB006F916C /* Helper.swift in Sources */,
+				22989F341D5160AB006F916C /* CodeView.swift in Sources */,
+				22989F4E1D5160AB006F916C /* Pages.swift in Sources */,
+				22989F5A1D5160AB006F916C /* Win.swift in Sources */,
+				22989F361D5160AB006F916C /* DimmedCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXVariantGroup section */
-		22989EFA1D516039006F916C /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				22989EFB1D516039006F916C /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		22989EFF1D516039006F916C /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				22989F001D516039006F916C /* Base */,
-			);
-			name = LaunchScreen.storyboard;
-			sourceTree = "<group>";
-		};
-/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		22989F031D516039006F916C /* Debug */ = {
@@ -247,23 +473,30 @@
 		};
 		22989F061D516039006F916C /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9D817D5C1233F5440EB83F93 /* Pods-CrownHog.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = CrownHog/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = zomero.CrownHog;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "CrownHog/CrownHog-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
 		};
 		22989F071D516039006F916C /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 04EA42E09F48D031FDD700FB /* Pods-CrownHog.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = CrownHog/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = zomero.CrownHog;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "CrownHog/CrownHog-Bridging-Header.h";
 			};
 			name = Release;
 		};
@@ -286,6 +519,7 @@
 				22989F071D516039006F916C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
