@@ -567,7 +567,7 @@
                                                     <color key="textColor" red="0.83921568629999999" green="0.83921568629999999" blue="0.83921568629999999" alpha="1" colorSpace="calibratedRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Arrow" translatesAutoresizingMaskIntoConstraints="NO" id="hV7-7Q-613">
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="hV7-7Q-613">
                                                     <rect key="frame" x="10" y="10" width="49" height="48.5"/>
                                                     <constraints>
                                                         <constraint firstAttribute="width" secondItem="hV7-7Q-613" secondAttribute="height" multiplier="1:1" id="Bet-aW-6eT"/>
@@ -1040,7 +1040,6 @@
                                         </button>
                                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageWhenHighlighted="NO" adjustsImageWhenDisabled="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JDe-tB-MWI">
                                             <rect key="frame" x="110" y="40" width="100" height="100"/>
-                                            <state key="normal" image="MaskButton"/>
                                         </button>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SUS-Gt-OOg">
                                             <rect key="frame" x="216" y="153" width="80" height="20"/>
@@ -1451,7 +1450,6 @@
         </scene>
     </scenes>
     <resources>
-        <image name="Arrow" width="24" height="42"/>
         <image name="Camera" width="27" height="20"/>
         <image name="Code" width="25" height="25"/>
         <image name="Create" width="100" height="18"/>
@@ -1460,7 +1458,6 @@
         <image name="Line" width="320" height="2"/>
         <image name="Location" width="15" height="20"/>
         <image name="Mask" width="75" height="75"/>
-        <image name="MaskButton" width="100" height="100"/>
         <image name="PinLine" width="100" height="4"/>
         <image name="Views" width="22" height="15"/>
         <image name="btnborder.png" width="945" height="135"/>

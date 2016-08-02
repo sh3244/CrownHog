@@ -55,36 +55,39 @@ class HogLogin: PFLogInViewController, PFLogInViewControllerDelegate {
     func logInViewController(logInController: PFLogInViewController, didLogInUser user: PFUser) {
         let accessToken = FBSDKAccessToken.currentAccessToken()
         let req = FBSDKGraphRequest(graphPath: "me", parameters: ["fields":"id, name"], tokenString: accessToken.tokenString, version: nil, HTTPMethod: "GET")
-        req.startWithCompletionHandler({ (connection, result, error : NSError!) -> Void in
-            if(error == nil)
-            {
-                NSUserDefaults.standardUserDefaults().setValue(result["id"] as! String, forKey: "fbid")
-                NSUserDefaults.standardUserDefaults().setValue(result["name"] as! String, forKey: "name")
-                NSUserDefaults.standardUserDefaults().setObject(UIImagePNGRepresentation(self.getProfPic(result["id"] as! String)!), forKey: "profileImage")
-                
-                let query = PFQuery(className: "_User")
-                let username = PFUser.currentUser()?.username
-                query.whereKey("username", equalTo: username!)
-                query.findObjectsInBackgroundWithBlock{
-                    (objects: [PFObject]?, error: NSError?) -> Void in
-                    if (error == nil) {
-                        if let objects = objects {
-                            for object in objects {
-                                object["fbid"] = result["id"] as! String
-                                let imageFile = PFFile(name: "image.png", data: UIImagePNGRepresentation(self.getProfPic(result["id"] as! String)!)!)
-                                object["profileImage"] = imageFile
-                                object.saveInBackground()
+        req.startWithCompletionHandler({ connection, result, error -> Void in
+            if(error == nil) {
+                if let userID = result.valueForKey("id") as? String {
+                    NSUserDefaults.standardUserDefaults().setValue(userID, forKey: "fbid")
+                    
+                    let image = self.getProfPic(userID)
+                    NSUserDefaults.standardUserDefaults().setObject(image, forKey: "profileImage")
+                    
+                    let query = PFQuery(className: "_User")
+                    let username = PFUser.currentUser()?.username
+                    query.whereKey("username", equalTo: username!)
+                    query.findObjectsInBackgroundWithBlock{
+                        (objects: [PFObject]?, error: NSError?) -> Void in
+                        if (error == nil) {
+                            if let objects = objects {
+                                for object in objects {
+                                    object["fbid"] = result.stringForKey("id")
+                                    if let img = image {
+                                        let imageFile = PFFile(name: "image.png", data: UIImagePNGRepresentation(img)!)
+                                        object["profileImage"] = imageFile
+                                        object.saveInBackground()
+                                    }
+                                }
                             }
                         }
-                    }
-                    else {
-                        print("error login")
+                        else {
+                            print("error login")
+                        }
                     }
                 }
-            }
-            else
-            {
-                print("error \(error)")
+                if let userName = result.valueForKey("name") as? String {
+                    NSUserDefaults.standardUserDefaults().setValue(userName, forKey: "name")
+                }
             }
         })
         UIApplication.sharedApplication().setStatusBarStyle(.LightContent, animated: true)
@@ -95,15 +98,4 @@ class HogLogin: PFLogInViewController, PFLogInViewControllerDelegate {
         UIApplication.sharedApplication().setStatusBarStyle(.LightContent, animated: true)
         self.dismissViewControllerAnimated(true, completion: nil)
     }
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
-    }
-    */
-
 }
