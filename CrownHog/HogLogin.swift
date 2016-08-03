@@ -24,9 +24,11 @@ class HogLogin: PFLogInViewController, PFLogInViewControllerDelegate {
         // Dispose of any resources that can be recreated.
     }
     
+    override func preferredStatusBarStyle() -> UIStatusBarStyle {
+        return .Default
+    }
+    
     func setupAppearance() {
-        UIApplication.sharedApplication().setStatusBarStyle(.Default, animated: true)
-        
         let logoView = UIImageView()
         logoView.image = UIImage(named: "logoMedium.png")
         logoView.contentMode = UIViewContentMode.Center
@@ -90,12 +92,5 @@ class HogLogin: PFLogInViewController, PFLogInViewControllerDelegate {
                 }
             }
         })
-        UIApplication.sharedApplication().setStatusBarStyle(.LightContent, animated: true)
-        self.dismissViewControllerAnimated(true, completion: nil)
-    }
-    
-    func logInViewControllerDidCancelLogIn(logInController: PFLogInViewController) {
-        UIApplication.sharedApplication().setStatusBarStyle(.LightContent, animated: true)
-        self.dismissViewControllerAnimated(true, completion: nil)
     }
 }

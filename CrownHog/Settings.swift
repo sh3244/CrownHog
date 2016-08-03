@@ -48,9 +48,9 @@ class Settings: UIViewController {
     
     func setupButtons() {
         exitButton.setImage(UIImage(named: "ex.png"), forState: .Normal)
-        exitButton.addTarget(self, action: "exitView", forControlEvents: .TouchUpInside)
+        exitButton.addTarget(self, action: #selector(Settings.exitView), forControlEvents: .TouchUpInside)
         
-        logoutButton.addTarget(self, action: "logout", forControlEvents: .TouchUpInside)
+        logoutButton.addTarget(self, action: #selector(Settings.logout), forControlEvents: .TouchUpInside)
     }
     
     func exitView() {

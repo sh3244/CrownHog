@@ -40,7 +40,7 @@ class SocialView: UIViewController {
     }
     
     func setupButtons() {
-        exitButton.addTarget(self, action: "exitView", forControlEvents: .TouchUpInside)
+        exitButton.addTarget(self, action: #selector(SocialView.exitView), forControlEvents: .TouchUpInside)
         
     }
     
@@ -91,7 +91,7 @@ class SocialView: UIViewController {
             if (error == nil) {
                 if let objects = objects {
                     for object in objects {
-                        if let number = object.valueForKey("number") {
+                        if object.valueForKey("number") != nil {
 //                            if (number as! String == self.toPass){
 //                                self.loadInfo(String(object.valueForKey("username")!))
 //                            }

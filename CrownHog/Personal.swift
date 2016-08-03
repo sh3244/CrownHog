@@ -77,16 +77,16 @@ class Personal: UIViewController, UITableViewDelegate, UITableViewDataSource {
         likesLabel.text = likes
         profileView.image = image
         
-        settingsButton.addTarget(self, action: "pushExtraController", forControlEvents: .TouchUpInside)
+        settingsButton.addTarget(self, action: #selector(Personal.pushExtraController), forControlEvents: .TouchUpInside)
         
         backButton.imageView?.contentMode = .ScaleAspectFit
         backButton.setImage(UIImage(named: "Arrow"), forState: .Normal)
-        backButton.addTarget(self, action: "backAction", forControlEvents: .TouchUpInside)
+        backButton.addTarget(self, action: #selector(Personal.backAction), forControlEvents: .TouchUpInside)
         
         refresher.backgroundColor = UIColor.greenColor()
         refresher.tintColor = UIColor.blueColor()
         refresher.attributedTitle = NSAttributedString(string: "Help")
-        refresher.addTarget(self, action: "reloads:", forControlEvents: UIControlEvents.ValueChanged)
+        refresher.addTarget(self, action: #selector(Personal.reloads(_:)), forControlEvents: UIControlEvents.ValueChanged)
         tableView.addSubview(refresher)
     }
 
@@ -111,7 +111,7 @@ class Personal: UIViewController, UITableViewDelegate, UITableViewDataSource {
                     image.getDataInBackgroundWithBlock({ (result: NSData?, error: NSError?) -> Void in
                         if (error == nil) {
                             self.listImages.append(UIImage(data: result!)!)
-                            self.numberItems++
+                            self.numberItems += 1
                             self.listComments.append((post.valueForKey("imageComment") as? String)!)
                             self.tableView.reloadData()
                         }
@@ -165,13 +165,13 @@ class Personal: UIViewController, UITableViewDelegate, UITableViewDataSource {
             if (seconds==0) {
                 timerCounter = NSTimeInterval(9)
             }
-            NSTimer.scheduledTimerWithTimeInterval(1, target: self, selector: "onTimer:", userInfo: nil, repeats: true)
+            NSTimer.scheduledTimerWithTimeInterval(1, target: self, selector: #selector(Personal.onTimer(_:)), userInfo: nil, repeats: true)
         }
     }
     
     @objc func onTimer(timer:NSTimer!) {
         if (!timerCounter.isZero) {
-            timerCounter--
+            timerCounter -= 1
         }
         else {
             

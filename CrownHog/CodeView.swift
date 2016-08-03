@@ -81,7 +81,7 @@ class CodeView: UIViewController {
     func setupView() {
         //settings button
         profileButton.setImage(UIImage(named: "settings.png"), forState: UIControlState.Normal)
-        profileButton.addTarget(self, action: "loadProfile", forControlEvents: .TouchUpInside)
+        profileButton.addTarget(self, action: #selector(CodeView.loadProfile), forControlEvents: .TouchUpInside)
         
         //top logo
         self.navigationItem.titleView = UIImageView.init(image: UIImage(named: "logoMedium.png"))
@@ -171,7 +171,7 @@ class CodeView: UIViewController {
     func setupInitial() {
         buttons = [oneButton, twoButton, threeButton, fourButton, fiveButton, sixButton, sevenButton, eightButton, nineButton]
         for button in buttons {
-            button.addTarget(self, action: "enterCode:", forControlEvents: .TouchUpInside)
+            button.addTarget(self, action: #selector(CodeView.enterCode(_:)), forControlEvents: .TouchUpInside)
             button.tag = Int(button.titleLabel!.text!)!
         }
         pins = [pinOne, pinTwo, pinThree]
@@ -193,11 +193,11 @@ class CodeView: UIViewController {
     func enterCode(sender:UIButton) {
         if (pinIndex == 0) {
             pinOne.text = String(sender.tag)
-            pinIndex++
+            pinIndex += 1
         }
         else if (pinIndex == 1) {
             pinTwo.text = String(sender.tag)
-            pinIndex++
+            pinIndex += 1
         }
         else if (pinIndex == 2) {
             pinThree.text = String(sender.tag)

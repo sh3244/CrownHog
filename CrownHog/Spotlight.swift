@@ -88,7 +88,7 @@ class Spotlight: UIViewController, UITableViewDataSource, UITableViewDelegate, U
                     if error == nil {
                         if let imageData = imageData {
                             self.image.append(UIImage(data: imageData)!)
-                            self.numberItems++
+                            self.numberItems += 1
                         }
                     }
                     dispatch_async(dispatch_get_main_queue(), { () -> Void in

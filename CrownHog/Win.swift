@@ -40,9 +40,9 @@ class Win: UIViewController, UIImagePickerControllerDelegate, UINavigationContro
     //MARK: - Setup View
 
     func setupAppearance() {
-        cameraButton.addTarget(self, action: "getPicture", forControlEvents: .TouchUpInside)
-        uploadButton.addTarget(self, action: "uploadPicture", forControlEvents: .TouchUpInside)
-        backButton.action = "somethingAction"
+        cameraButton.addTarget(self, action: #selector(Win.getPicture), forControlEvents: .TouchUpInside)
+        uploadButton.addTarget(self, action: #selector(Win.uploadPicture), forControlEvents: .TouchUpInside)
+        backButton.action = #selector(Win.somethingAction)
         
         commentField.delegate = self
         
@@ -54,7 +54,7 @@ class Win: UIViewController, UIImagePickerControllerDelegate, UINavigationContro
     }
     
     func setupExtra() {
-        let tap:UITapGestureRecognizer = UITapGestureRecognizer(target: self, action: "dismissKeyboard")
+        let tap:UITapGestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(Win.dismissKeyboard))
         touchView.addGestureRecognizer(tap)
         
         let blurEffect = UIBlurEffect(style: .Light)

@@ -1,3 +1,4 @@
+
 //
 //  HogPage.swift
 //  Spotlight
@@ -47,7 +48,7 @@ class HogPage: UIViewController, UINavigationControllerDelegate{
     }
     
     func setActive() {
-        let fingerTap: UITapGestureRecognizer = UITapGestureRecognizer.init(target: self, action: "singleTap:")
+        let fingerTap: UITapGestureRecognizer = UITapGestureRecognizer.init(target: self, action: #selector(HogPage.singleTap(_:)))
         self.view.addGestureRecognizer(fingerTap)
     }
     
@@ -111,12 +112,12 @@ class HogPage: UIViewController, UINavigationControllerDelegate{
     
     func startTimer(seconds:Int) {
         timerCounter = NSTimeInterval(seconds)
-        NSTimer.scheduledTimerWithTimeInterval(1, target: self, selector: "onTimer:", userInfo: nil, repeats: true)
+        NSTimer.scheduledTimerWithTimeInterval(1, target: self, selector: #selector(HogPage.onTimer(_:)), userInfo: nil, repeats: true)
     }
     
     @objc func onTimer(timer:NSTimer!) {
         if (!timerCounter.isZero) {
-            timerCounter!--
+            timerCounter! -= 1
         }
         else {
             

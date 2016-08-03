@@ -8,7 +8,6 @@
 
 import UIKit
 import ParseUI
-import Bolts
 import FBSDKCoreKit
 import ParseFacebookUtilsV4
 
@@ -30,7 +29,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         self.window?.tintColor = Helper.UIColorFromRGB(0x02C6C6)
         
-        UIApplication.sharedApplication().setStatusBarStyle(.LightContent, animated: true)
+//        UIApplication.sharedApplication().setStatusBarStyle(.LightContent, animated: true)
         
         return true
     }

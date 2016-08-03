@@ -32,7 +32,7 @@ class CustomCell: UITableViewCell {
     func setupAppearance() {
         likeButton.imageView?.contentMode = .ScaleAspectFit
         likeButton.highlighted = true
-        likeButton.addTarget(self, action: "unLike", forControlEvents: .TouchUpInside)
+        likeButton.addTarget(self, action: #selector(CustomCell.unLike), forControlEvents: .TouchUpInside)
     }
     
     func unLike() {

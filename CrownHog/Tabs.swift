@@ -17,10 +17,10 @@ class Tabs: UITabBarController {
         
         self.selectedIndex = 0
         
-        let swipeLeft = UISwipeGestureRecognizer.init(target: self, action: "swipeLeft:")
+        let swipeLeft = UISwipeGestureRecognizer.init(target: self, action: #selector(Tabs.swipeLeft(_:)))
         swipeLeft.direction = UISwipeGestureRecognizerDirection.Left
         self.view.addGestureRecognizer(swipeLeft)
-        let swipeRight = UISwipeGestureRecognizer.init(target: self, action: "swipeRight:")
+        let swipeRight = UISwipeGestureRecognizer.init(target: self, action: #selector(Tabs.swipeRight(_:)))
         swipeRight.direction = UISwipeGestureRecognizerDirection.Right
         self.view.addGestureRecognizer(swipeRight)
     }
@@ -35,7 +35,7 @@ class Tabs: UITabBarController {
         if (recognizer.direction == .Right) {
             if (self.selectedIndex == 1) {
                 Helper.delay(0.3) {
-                    self.selectedIndex--
+                    self.selectedIndex-=1
                 }
             }
         }
@@ -45,7 +45,7 @@ class Tabs: UITabBarController {
         if (recognizer.direction == .Left) {
             if (self.selectedIndex == 0) {
                 Helper.delay(0.3) {
-                    self.selectedIndex++
+                    self.selectedIndex+=1
                 }
             }
         }
