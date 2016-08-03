@@ -40,10 +40,7 @@ class Settings: UIViewController {
     }
     
     func setupAppearance() {
-        profileView.image = UIImage(data: NSUserDefaults.standardUserDefaults().objectForKey("profileImage") as! NSData)
         profileView.contentMode = .ScaleAspectFit
-        
-        nameLabel.text = NSUserDefaults.standardUserDefaults().objectForKey("name") as? String
     }
     
     func setupButtons() {

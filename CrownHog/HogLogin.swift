@@ -60,10 +60,7 @@ class HogLogin: PFLogInViewController, PFLogInViewControllerDelegate {
         req.startWithCompletionHandler({ connection, result, error -> Void in
             if(error == nil) {
                 if let userID = result.valueForKey("id") as? String {
-                    NSUserDefaults.standardUserDefaults().setValue(userID, forKey: "fbid")
-                    
                     let image = self.getProfPic(userID)
-                    NSUserDefaults.standardUserDefaults().setObject(image, forKey: "profileImage")
                     
                     let query = PFQuery(className: "_User")
                     let username = PFUser.currentUser()?.username
@@ -86,9 +83,6 @@ class HogLogin: PFLogInViewController, PFLogInViewControllerDelegate {
                             print("error login")
                         }
                     }
-                }
-                if let userName = result.valueForKey("name") as? String {
-                    NSUserDefaults.standardUserDefaults().setValue(userName, forKey: "name")
                 }
             }
         })

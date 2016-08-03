@@ -128,7 +128,7 @@ class HogPage: UIViewController, UINavigationControllerDelegate{
     // MARK: - Navigation
 
     func singleTap(recognizer: UITapGestureRecognizer) {
-        if (self.timerCounter > 0.0) {
+        if timerCounter != nil {
             pushPersonalController()
         }
         else {

@@ -29,14 +29,14 @@
 			<string>Editor</string>
 			<key>CFBundleURLSchemes</key>
 			<array>
-				<string>757690217695760</string>
+				<string>fb757690217695760</string>
 			</array>
 		</dict>
 	</array>
 	<key>CFBundleVersion</key>
 	<string>2</string>
 	<key>FacebookAppID</key>
-	<string>fb757690217695760</string>
+	<string>757690217695760</string>
 	<key>FacebookDisplayName</key>
 	<string>Spotlight</string>
 	<key>LSApplicationQueriesSchemes</key>
