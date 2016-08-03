@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		14930F2FC31D4D9C3D53A724 /* Pods_CrownHog.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A4B3D6F1F10741C143959317 /* Pods_CrownHog.framework */; };
+		220015991D51744F007593AA /* Pods_CrownHog.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F77BC5C19FC3B27882807B53 /* Pods_CrownHog.framework */; };
 		22989F321D5160AB006F916C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22989F091D5160AB006F916C /* AppDelegate.swift */; };
 		22989F331D5160AB006F916C /* btnborder.png in Resources */ = {isa = PBXBuildFile; fileRef = 22989F0A1D5160AB006F916C /* btnborder.png */; };
 		22989F341D5160AB006F916C /* CodeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22989F0B1D5160AB006F916C /* CodeView.swift */; };
@@ -52,8 +52,6 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		1F550836F3CE7CB8BAC710D9 /* Pods-CrownHog.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CrownHog.debug.xcconfig"; path = "Pods/Target Support Files/Pods-CrownHog/Pods-CrownHog.debug.xcconfig"; sourceTree = "<group>"; };
-		22989EF31D516039006F916C /* CrownHog.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CrownHog.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		22989F091D5160AB006F916C /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		22989F0A1D5160AB006F916C /* btnborder.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = btnborder.png; sourceTree = "<group>"; };
 		22989F0B1D5160AB006F916C /* CodeView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CodeView.swift; sourceTree = "<group>"; };
@@ -95,9 +93,10 @@
 		22989F2F1D5160AB006F916C /* text.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = text.png; sourceTree = "<group>"; };
 		22989F301D5160AB006F916C /* twitter.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = twitter.png; sourceTree = "<group>"; };
 		22989F311D5160AB006F916C /* Win.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Win.swift; sourceTree = "<group>"; };
-		22989F5E1D5161A2006F916C /* Podfile */ = {isa = PBXFileReference; lastKnownFileType = text; path = Podfile; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		716272A674CB8CFBAB36D889 /* Pods-CrownHog.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CrownHog.release.xcconfig"; path = "Pods/Target Support Files/Pods-CrownHog/Pods-CrownHog.release.xcconfig"; sourceTree = "<group>"; };
-		A4B3D6F1F10741C143959317 /* Pods_CrownHog.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CrownHog.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		22CF3B8E1D51734800E0EAC7 /* CrownHog.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CrownHog.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		70A50D5634C712375F0B9670 /* Pods-CrownHog.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CrownHog.release.xcconfig"; path = "Pods/Target Support Files/Pods-CrownHog/Pods-CrownHog.release.xcconfig"; sourceTree = "<group>"; };
+		759C93B584FE25AE8EB97385 /* Pods-CrownHog.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CrownHog.debug.xcconfig"; path = "Pods/Target Support Files/Pods-CrownHog/Pods-CrownHog.debug.xcconfig"; sourceTree = "<group>"; };
+		F77BC5C19FC3B27882807B53 /* Pods_CrownHog.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CrownHog.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -105,7 +104,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				14930F2FC31D4D9C3D53A724 /* Pods_CrownHog.framework in Frameworks */,
+				220015991D51744F007593AA /* Pods_CrownHog.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -115,23 +114,14 @@
 		22989EEA1D516039006F916C = {
 			isa = PBXGroup;
 			children = (
-				22989F5E1D5161A2006F916C /* Podfile */,
 				22989F121D5160AB006F916C /* Gotham-Bold.otf */,
 				22989F131D5160AB006F916C /* Gotham-Book.otf */,
 				22989F141D5160AB006F916C /* Gotham-Medium.otf */,
 				22989EF51D516039006F916C /* CrownHog */,
-				22989EF41D516039006F916C /* Products */,
-				81FCB9FC6E1583269264AEA6 /* Pods */,
-				E7C0FCB39477597D14CD967B /* Frameworks */,
+				B61380D133F4972EEC179EDD /* Pods */,
+				E1466501C90135E0825505EC /* Frameworks */,
+				22CF3B8E1D51734800E0EAC7 /* CrownHog.app */,
 			);
-			sourceTree = "<group>";
-		};
-		22989EF41D516039006F916C /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				22989EF31D516039006F916C /* CrownHog.app */,
-			);
-			name = Products;
 			sourceTree = "<group>";
 		};
 		22989EF51D516039006F916C /* CrownHog */ = {
@@ -203,19 +193,19 @@
 			name = View;
 			sourceTree = "<group>";
 		};
-		81FCB9FC6E1583269264AEA6 /* Pods */ = {
+		B61380D133F4972EEC179EDD /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				1F550836F3CE7CB8BAC710D9 /* Pods-CrownHog.debug.xcconfig */,
-				716272A674CB8CFBAB36D889 /* Pods-CrownHog.release.xcconfig */,
+				759C93B584FE25AE8EB97385 /* Pods-CrownHog.debug.xcconfig */,
+				70A50D5634C712375F0B9670 /* Pods-CrownHog.release.xcconfig */,
 			);
 			name = Pods;
 			sourceTree = "<group>";
 		};
-		E7C0FCB39477597D14CD967B /* Frameworks */ = {
+		E1466501C90135E0825505EC /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				A4B3D6F1F10741C143959317 /* Pods_CrownHog.framework */,
+				F77BC5C19FC3B27882807B53 /* Pods_CrownHog.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -240,7 +230,7 @@
 			);
 			name = CrownHog;
 			productName = CrownHog;
-			productReference = 22989EF31D516039006F916C /* CrownHog.app */;
+			productReference = 22CF3B8E1D51734800E0EAC7 /* CrownHog.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -268,7 +258,7 @@
 				Base,
 			);
 			mainGroup = 22989EEA1D516039006F916C;
-			productRefGroup = 22989EF41D516039006F916C /* Products */;
+			productRefGroup = 22989EEA1D516039006F916C;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
@@ -389,6 +379,7 @@
 /* Begin XCBuildConfiguration section */
 		22989F031D516039006F916C /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 759C93B584FE25AE8EB97385 /* Pods-CrownHog.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ANALYZER_NONNULL = YES;
@@ -408,7 +399,8 @@
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
-				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
@@ -428,6 +420,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
+				PROVISIONING_PROFILE = "0657d4e7-c993-4010-ad8f-3a54293f2d7c";
 				SDKROOT = iphoneos;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
@@ -435,6 +428,7 @@
 		};
 		22989F041D516039006F916C /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 70A50D5634C712375F0B9670 /* Pods-CrownHog.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ANALYZER_NONNULL = YES;
@@ -455,6 +449,7 @@
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
@@ -467,6 +462,7 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
 				MTL_ENABLE_DEBUG_INFO = NO;
+				PROVISIONING_PROFILE = "0657d4e7-c993-4010-ad8f-3a54293f2d7c";
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;
 			};
@@ -474,16 +470,16 @@
 		};
 		22989F061D516039006F916C /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 1F550836F3CE7CB8BAC710D9 /* Pods-CrownHog.debug.xcconfig */;
+			baseConfigurationReference = 759C93B584FE25AE8EB97385 /* Pods-CrownHog.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
-				CODE_SIGN_IDENTITY = "$(inherited)";
+				CODE_SIGN_IDENTITY = "";
 				INFOPLIST_FILE = CrownHog/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = zomero.CrownHog;
+				PRODUCT_BUNDLE_IDENTIFIER = com.zomero.CrownHog;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "";
+				PROVISIONING_PROFILE = "0657d4e7-c993-4010-ad8f-3a54293f2d7c";
 				SWIFT_INSTALL_OBJC_HEADER = NO;
 				SWIFT_OBJC_BRIDGING_HEADER = "";
 				SWIFT_OBJC_INTERFACE_HEADER_NAME = "";
@@ -493,16 +489,16 @@
 		};
 		22989F071D516039006F916C /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 716272A674CB8CFBAB36D889 /* Pods-CrownHog.release.xcconfig */;
+			baseConfigurationReference = 70A50D5634C712375F0B9670 /* Pods-CrownHog.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
-				CODE_SIGN_IDENTITY = "$(inherited)";
+				CODE_SIGN_IDENTITY = "";
 				INFOPLIST_FILE = CrownHog/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = zomero.CrownHog;
+				PRODUCT_BUNDLE_IDENTIFIER = com.zomero.CrownHog;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "";
+				PROVISIONING_PROFILE = "0657d4e7-c993-4010-ad8f-3a54293f2d7c";
 				SWIFT_INSTALL_OBJC_HEADER = NO;
 				SWIFT_OBJC_BRIDGING_HEADER = "";
 				SWIFT_OBJC_INTERFACE_HEADER_NAME = "";
