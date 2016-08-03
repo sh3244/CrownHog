@@ -8,4 +8,6 @@ target 'CrownHog' do
     pod 'Parse'
     pod 'ParseUI'
     pod 'ParseFacebookUtilsV4', '~> 1.11'
+    
+#    pod 'Fabric'
 end
